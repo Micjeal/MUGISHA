@@ -81,9 +81,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🤝 Connect with Me
 
 - LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@yourusername](https://github.com/Micjeal)
 - Twitter: [@yourhandle](https://twitter.com/yourhandle)
-- Email: your.email@example.com
+- Email: mugishamicheal24@gmail.com.com
 
 ## 🙏 Acknowledgments
 
@@ -94,5 +94,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  Made with ❤️ by Mugisha Micheal
+  Made with VS CODE by Mugisha Micheal
 </div>
