@@ -9,6 +9,9 @@
             --light: #f8f9fa;
             --gray: #6c757d;
             --light-gray: #e9ecef;
+            --surface: #ffffff;
+            --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.1);
+            --shadow-lg: 0 20px 45px rgba(15, 23, 42, 0.15);
             
             /* Glassmorphism Variables */
             --glass-bg-light: rgba(255, 255, 255, 0.15);
@@ -46,6 +49,7 @@
             line-height: 1.7;
             transition: all 0.3s ease;
             font-size: 1.05rem;
+            background-image: radial-gradient(circle at top, rgba(67, 97, 238, 0.08), transparent 55%);
         }
 
         body.dark-mode {
@@ -55,6 +59,7 @@
             --dark: var(--dark-text);
             --gray: var(--dark-gray);
             --light-gray: var(--dark-border);
+            --surface: rgba(22, 22, 22, 0.95);
         }
 
         /* Typography */
@@ -124,6 +129,14 @@
             padding: 0 2rem;
             position: relative;
             z-index: 1;
+        }
+
+        .section-intro {
+            max-width: 720px;
+            margin: -2rem auto 3.5rem;
+            text-align: center;
+            font-size: 1.05rem;
+            color: var(--gray);
         }
 
         section {
@@ -362,6 +375,23 @@
             flex: 1;
         }
 
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.4rem 1rem;
+            border-radius: 999px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        body.dark-mode .hero-badge {
+            background: rgba(67, 97, 238, 0.2);
+        }
+
         .hero-image {
             flex: 1;
             position: relative;
@@ -391,6 +421,38 @@
             color: var(--gray);
             font-weight: 400;
             max-width: 600px;
+        }
+
+        .hero-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 1rem 1.2rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--light-gray);
+        }
+
+        body.dark-mode .metric-card {
+            border-color: var(--dark-border);
+            box-shadow: var(--glass-shadow-dark);
+        }
+
+        .metric-card h3 {
+            margin-bottom: 0.2rem;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+
+        .metric-card span {
+            color: var(--gray);
+            font-size: 0.95rem;
+            display: block;
         }
 
         .cta-buttons {
@@ -1033,6 +1095,10 @@
             transition: all 0.3s ease;
             background-color: var(--light);
             color: var(--dark);
+        }
+
+        .form-control::placeholder {
+            color: rgba(108, 117, 125, 0.8);
         }
 
         body.dark-mode .form-control {
